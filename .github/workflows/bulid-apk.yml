@@ -56,8 +56,8 @@ jobs:
           ndk-version: 'r29'
           add-to-path: true
 
-      - name: Build libXray AAR
-        run: ./scripts/build-libxray-aar.sh
+      -       - name: Build libXray AAR
+        run: bash ./scripts/build-libxray-aar.sh
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
